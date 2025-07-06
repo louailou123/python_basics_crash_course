@@ -67,3 +67,15 @@ def hello_function (hello = 'hello' , times = 1):
        print(hello)
     return 0
 hello_function('hello',5)
+#f-string
+print(f'hello i am {20} years old')
+#single line if statement
+age = 21 if 1 > 0 else 22
+print(age)
+#list comprehension
+list_two = [i * 2 for i in range(0,10)]
+listgg= [ f'{i}{j}' for i in ('A','B','C','D','E') for j in range(0,5) if f'{i}{j}' != "C3"]
+print (listgg)
+print(list_two)
+#lambda function
+age = lambda age:age*2
