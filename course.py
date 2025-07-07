@@ -79,3 +79,23 @@ print (listgg)
 print(list_two)
 #lambda function
 age = lambda age:age*2
+#Classes
+class MyClass :
+    def __init__(self,msg): #constructor of the class
+        self.msg=msg
+    def __str__(self): #print function
+        return(self.msg)    
+message=MyClass('hello') #creating an object from MyClass
+print(message)
+#inheritance
+class Animal:
+    def __init__(self,age,name):
+        self.age=age
+        self.name=name
+class Dog(Animal):
+    def __init__(self,age,name,height):
+        super().__init__(age,name) #the dog class get the attributes of the animal class using super method
+        self.height=height
+#modules
+from math import sqrt
+print (sqrt(4))
