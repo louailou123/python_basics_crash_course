@@ -98,4 +98,11 @@ class Dog(Animal):
         self.height=height
 #modules
 from math import sqrt
+import matplotlib.pyplot as plt
+x= [i for i in range(0,11)]
+y=[j for j in range (0,11)]
+plt.plot(x,y)
+plt.xlabel('x axis')
+plt.ylabel('x axis')
+plt.show()
 print (sqrt(4))
